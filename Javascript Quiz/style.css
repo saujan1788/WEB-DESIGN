@@ -1,0 +1,175 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My Style Sheet Starts Here */
+
+
+
+body{
+	width:90%;
+	margin:0 auto;
+	padding:1em;
+	font-family:georgia;	
+	background-color:#D2C9E2;
+	line-height:1.25;
+}
+
+#container{
+	padding-top:1em;
+	padding-left:5em;
+	padding-bottom:1em;
+	background-color:white;
+	overflow:hidden;
+}
+
+form, quiz{	
+	width:25em;
+	border:solid;
+	margin:1.5em;
+	padding:1em;
+}
+
+p, li, h2, h1, h4, input, select, ul{
+	padding-left:0.85em;	
+	padding-right:0.85em;
+}
+
+
+header{
+	padding:1em;
+	padding-left:0.1em;
+	font-family : cursive;
+	background-color:#5A6E7F;
+	box-shadow: 0.15em 0 0.10em 0.15em grey;
+	border-top-right-radius:1em;
+	border-top-left-radius:1em;	
+}
+
+#quiz{
+	display:none;
+}
+
+#q1, #q2, #q3, #q4,#q5,#feedback{
+	display:none;
+} 
+
+#nextq2, #nextq3, #nextq4, #nextq5, #submitanswer, #submitform{
+	margin-left:150px;
+}
+
+footer{	
+	padding:1em;
+	text-align:center;
+	padding-left:0.10em;
+	font-family : cursive;
+	background-color:#5A6E7F;
+	box-shadow: 0 0.15em 0.15em 0.15em grey;
+	border-bottom-right-radius:1em;
+	border-bottom-left-radius:1em;	
+}
+
+
+@media screen and (max-width:750px){
+	body{
+		max-width:90%;
+		margin:0 auto;
+		padding:1em;
+	}
+	
+	header{
+		padding:0.5em;
+	}
+	
+	form, quiz{
+		width:auto;
+	}
+	
+	#nextq2, #nextq3, #nextq4, #nextq5, #submitanswer, #submitform{
+		float:right;
+	}
+	
+	
+	#prevq1, #prevq2, #prevq3, #prevq4{
+		float:left;
+	}
+	
+	
+	
+	#container{		
+	padding-top:1em;
+	padding-left:0.10em;
+	padding-bottom:1em;
+	}
+}
+
+
+@media screen and (min-width:900px){
+	body{
+		max-width:900px;
+		margin:0 auto;
+		padding:1em;
+		border-top:0.10em;
+	}	
+	
+	form, quiz{
+		width:25em;
+	}
+	
+	header{
+		padding:1em;
+	}
+	
+	#container{
+		padding-top:1em;
+		padding-left:5em;
+		padding-bottom:1em;
+	}
+}
+
+

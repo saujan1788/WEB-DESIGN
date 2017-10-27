@@ -1,0 +1,118 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: Futura;
+  list-style: none;
+
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.heading{
+  background-color: #F5F5F5;
+}
+h1{
+  text-align: center;
+  padding: 10px 0;
+}
+
+.section {
+  float: left;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.dabbe {
+  padding: 20px 40px;
+  background: none;
+  border: none;
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.dabbe:after, .dabbe:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #000;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.dabbe:after {
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+}
+.dabbe:before {
+  -webkit-transform: translate(-3px, -3px);
+          transform: translate(-3px, -3px);
+}
+.dabbe:hover:after, a:hover:before {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+#section-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #F0FFF0;
+  border-right: 0.5px solid grey;
+  border-bottom: 0.5px solid grey;
+
+}
+
+#section-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #F0FFF0;
+  border-bottom: 0.5px solid grey;
+
+}
+
+
+#section-4 {
+  display: flex;
+  flex-direction: column;
+  background-color: #F0FFF0;
+}
+
+
+#section-3 {
+  display: flex;
+  flex-direction: column;
+  background-color:#F0FFF0;
+  border-right: 0.5px solid grey;
+}
+ .hdg1 {
+
+  font-size: 2em;
+  border-bottom: solid;
+  margin: 2em; 
+ }
+
+@media (max-height: 300px), (max-width: 650px) {
+  .section {
+    height: 100%;
+    width: 100%;
+    float: none;
+  }
+}
+
+

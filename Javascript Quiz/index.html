@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<HTML>
+	
+		<!-- SAUJANYA BOHARA : 2892141 -->
+
+	<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initialscale=1.0, width=device-width" />
+	<title>Brain Quiz</title>
+	
+	<link rel="stylesheet" href="style.css"/>
+	
+	</head>
+	
+	<body>
+		<header>
+			<!--  <img src="images/header.gif" /> -->
+			<h1>The Brain Gym</h1>		
+		</header>
+		
+		<div id="container">
+		<h2>Welcome to The Brain Gym.</h2>
+		<h4><br>Terms & Conditions :-</h4>
+		<ul>
+			<li><br>Must Provide Your Genuine Details Before Playing Quiz.</li>
+			<li>You will need to answer 5 IQ based Questions.</li>
+			<li>All questions are mandatory.</li>
+			<li>You will get 5 points for every correct answer.</li>
+			<li>You will loose 3 points on every wrong answer.</li>
+			<li>Fields with sign " * " are mandatory to fill.</li>
+		</ul>
+		
+		
+		<form name="form" id="form">
+			
+			<p>Please fill the below form to start playing quiz.</p>
+			<p><br>Title &nbsp;  &nbsp;  &nbsp;   &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  : <select name="title"><option value="nothing">---</option><option value="mr">Mr.</option><option value="ms">Ms.</option><option value="mrs">Mrs.</option></select></p>
+			<p><br>First Name &nbsp;  &nbsp;  : <input type="text" name="firstname" id="firstname" />*</p>
+			<p><br>Middle Name : <input type="text" name="middlename" /></p>
+			<p><br>Last Name  &nbsp; &nbsp;  &nbsp; : <input type="text" name="lastname" /></p>
+			<p><br>Sex  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; : <input type="radio" name="sex" value="Male" />Male
+																						<input type="radio" name="sex" value="Female" />Female  *</p>
+			<p><br>Date of birth &nbsp;  : <input type="text" name="dob" /></p>
+			<p><br>Email ID &nbsp;  &nbsp;  &nbsp;  &nbsp;  : <input type="text" name="email" /></p>
+			<p><br>Country  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  : <input type="text" name="country" id="country" /> *</p>
+			<p><br>State  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; : <input type="text" name="state" /></p>
+			<p><br><input type="checkbox" name="tnc" value="agree" id="tnc" /> Yes, I agree with the above mentioned Terms and conditions. *</p>
+			<br>
+			<p id="message1"> </p>
+			<input type="button" value="Submit" id="submitform" />
+			<br>
+		</form>
+		
+		<p id="message2"></p>
+		
+		<form name="quiz" id=quiz>
+		
+		<div id="q1">
+			
+			<p><br><br><strong>Q.1. </Strong> Which one of the four is least like other three ?</p>
+			<p><br><input type="radio" name="q1" value="dog" /> Dog</p>
+			<p><input type="radio" name="q1" value="mouse" /> Mouse</p>
+			<p><input type="radio" name="q1" value="lion" /> Lion</p>
+			<p><input type="radio" name="q1" value="snake" /> Snake</p>
+			<br>
+			<input type="button" value="Next" id="nextq2" />
+			<br>
+			
+		</div>
+				
+		<div id="q2">
+			
+			<p><br><br><strong>Q.2. </Strong> Which number Should Come next in the series ?<br><br>  1-1-2-3-5-8-13-?</p>
+			<select name="q2">
+				<option value="nothing">---</option>
+				<option value="8">8</option>
+				<option value="13">13</option>
+				<option value="21">21</option>			
+				<option value="31">31</option>
+			</select>
+			<br><br>
+			<input type="button" value="Previous" id="prevq1" />
+			<input type="button" value="Next" id="nextq3" />
+			<br>
+			
+		</div>
+		
+		
+		<div id="q3">
+			
+			<p><br><br><strong>Q.3. </Strong> 	Mary, who is sixteen years old, is four times as old as her brother. How old will Mary be when she is twice as old as her brother ?</p>
+			<ul>
+				<li><br>20</li>
+				<li>24</li>
+				<li>25</li>
+				<li>26</li>
+			</ul>
+			<p><br>Type your answer in the below box.</p>
+			<br><input type="text" name="q3" />
+			<br><br>
+			<input type="button" value="Previous" id="prevq2" />
+			<input type="button" value="Next" id="nextq4" />
+			<br>
+			
+			
+		</div>
+		
+		
+		<div id="q4">
+			
+			<p><br><br><strong>Q.4. </Strong> Which of these are the cities ?</p>
+			<p><br><input type="checkbox" name="q4" value="newyork" /> New York</p>
+			<p><input type="checkbox" name="q4" value="nile" /> Nile</p>
+			<p><input type="checkbox" name="q4" value="tokyo" /> Tokyo</p>
+			<p><input type="checkbox" name="q4" value="delhi" /> Delhi</p>
+			<br>
+			<input type="button" value="Previous" id="prevq3" />
+			<input type="button" value="Next" id="nextq5" />
+			<br>
+			
+			
+		</div>
+		
+		
+		<div id="q5">
+			
+			<p><br><br><strong>Q.5. </Strong> John needs 13 bottles of water from the store. John can only carry 3 at a time. What's the minimum number of trips John needs to make to the store ?</p>
+			<p><br><input type="radio" name="q5" value="5" /> 5</p>
+			<p><input type="radio" name="q5" value="4" /> 4</p>
+			<p><input type="radio" name="q5" value="6" /> 6</p>
+			<p><input type="radio" name="q5" value="4.5" /> 4.5</p>
+			<br>
+			<input type="button" value="Previous" id="prevq4" />
+			<input type="button" value="Submit" id="submitanswer" />
+			<br>
+			
+			
+		</div>
+		
+		<p id="feedback"><br><br>FEEDBACK</p>
+		
+		</form>
+		
+		</div>
+		
+		<footer>
+			<p>Quiz by :</p>
+			<p><br>SAUJANYA BOHARA</p>	
+			
+			<p>saujan1788@gmail.com</p>
+		</footer>
+		
+		<script src="jquery-1.12.1.min.js"></script>
+		<script src="jquery.js"></script>
+		
+	</body>
+
+</HTML>

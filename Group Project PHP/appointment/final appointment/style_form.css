@@ -1,0 +1,133 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lusitana);
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300);
+
+/* My Style Sheet Starts Here */
+
+
+#app_form li{
+	list-style: none;
+	padding: 1em 0.5em;	
+	
+}
+
+input, select{	
+	width: 20em;
+	height: 4em;
+	letter-spacing: 1px;
+}
+
+ #app_form{
+	 padding: 0;
+	 margin: 0 auto;
+	 border: 0;
+	 padding: 0 4em;
+ }
+ 
+
+
+#form{	
+	padding: 0.5em 1em;
+	margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+	flex-wrap: wrap;
+}
+
+#form1, #form2{	
+	padding: 0 1em;
+	margin: 0 auto;
+	border: 0;
+	line-height: 1em;
+}
+
+
+
+
+
+#form1{
+	background-color: white;
+	width: 25em;
+}
+
+#form2{
+	background-color: #e0e0eb;
+	width: 25em !important;
+	height: 100%;
+}
+
+select{
+	color: #65737e
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #65737e;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #65737e;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #65737e;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #65737e;
+}
+
+#form2 input, #form2 select{
+	background-color: #e0e0eb;
+	border-color: grey;
+	border-right: 0;
+	border-bottom: 0.5;
+	border-top: 0;
+	border-left: 0;
+}
+
+#form1 input, #form1 select{
+	border-color: grey;
+	border-right: 0;
+	border-bottom: 0.5;
+	border-top: 0;
+	border-left: 0;
+}
+
+#form2 textarea{
+	background-color: #888C95;
+	border-color: grey;
+	border: 0.25;
+}
+
+#form2 li{
+	border: 1em;
+}
+
+
+h4 .fa{
+	font-size: 200%;
+}
+
+.submit{
+  padding: 0 0.5em 0 0.5em;
+}
+
+#form2 .submit input{
+  border-top: 0.1em solid black;	
+  border-left: 0.1em solid black;	
+  border-right: 0.1em solid black;	
+  border-bottom: 0.1em solid black;	
+}
+
+#app_button{	
+  float: right;
+  width: 10em;
+  height: 4em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  padding: 0 0.25em 0 0.25em;
+}
+
+#app_button:hover {
+  background: #474544;
+  color: #F2F3EB;
+}

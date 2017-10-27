@@ -1,0 +1,42 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lusitana);
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300);
+
+/* My Style Sheet Starts Here */
+
+
+
+body{
+	 padding: 0;
+	 margin: 0 auto;
+	 border: 0;
+	 padding: 0 10em;
+}
+
+#adm-btn{
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	border: 0;
+}
+
+#user_btn, #app_btn, #reg_btn{	
+	background: white;
+  border-top: 0.1em solid black;	
+  border-left: 0.1em solid black;	
+  border-right: 0.1em solid black;	
+  border-bottom: 0.1em solid black;
+  
+  width: 10em;
+  height: 4em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  padding: 0 0.25em 0 0.25em;
+}
+
+#adm-btn input:hover{	
+  background: #474544;
+  color: #F2F3EB;
+}

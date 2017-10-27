@@ -1,0 +1,165 @@
+body, html {
+  height: 100%;
+  width: 100%;
+
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.heading{
+  background-color: #F5F5F5;
+}
+
+.section {
+  float: left;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  -webkit-display: flex;
+  /*-webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;*/
+}
+
+
+#section-1 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+
+}
+#section-1 h1{
+  padding: 3.0% 5.0% 3.0% 5.0%;
+                color: #65737E;
+                font-size: 500.5%;
+}
+#section-2 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+}
+
+
+#section-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+
+#section-3 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);}
+ .hdg1 {
+
+  font-size: 1.5em;
+  display: inline-block;
+  margin-top: 1.5em;
+ }
+
+@media (max-height: 300px), (max-width: 650px) {
+  .section {
+    height: 100%;
+    width: 100%;
+    float: none;
+  }
+}
+
+/* Rerun */
+.rerun {
+  position: absolute;
+  top: 51%;
+  left: 46%;
+  margin: 0 0 30px;
+  text-align: center;
+  border-radius: 10em;
+
+}
+.rerun a {
+  cursor: pointer;
+  display: inline-block;
+  background: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: #ffffff;
+  font-size: 58px;
+  line-height: 140px;
+  text-align: center;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.rerun a:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.rerun img{
+  width: 80px;
+  height: 60px;
+}
+
+
+
+
+
+/*==============Modal==================*/
+
+@media only screen and (max-width: 651px) {
+
+
+  
+.rerun {
+
+  position: fixed;
+  top: 81%;
+  left: 65%;
+
+  
+
+    }
+}
+@media only screen and (max-width: 420px) {
+
+
+  
+.rerun {
+
+  position: fixed;
+  top: 81%;
+  left: 57%;
+  
+    
+ 
+
+
+  
+  
+
+  
+
+}
+
+.rerun img {
+  opacity: 1;
+  height: 30%;
+  width: 30%;
+  
+}
+    
+  }
+
+
+
+
+
+
